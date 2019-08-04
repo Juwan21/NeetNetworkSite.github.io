@@ -1,0 +1,67 @@
+<!-- Header logo n title-->
+<div class = "top">
+
+<div class= "col1" > <img height = 120px width = 120px id="logo" alt="Neet Logo" src="../assets/NN_logo.png"></div>
+<div class= "col2" > <h1>Welcome to {{ title }}!</h1></div>
+ 
+</div>
+  
+<main id="content">
+
+  <!-- Navigation Bar -->
+  <div class = "nav">
+    
+    <nav>
+        <ul class= "pages">
+                <li>
+                  <a routerLink="/" routerLinkActive="active">Home Page</a>
+                </li>
+                <li>
+                  <a routerLink="/game" routerLinkActive="active">Game Page</a>
+                </li>
+                <li><a routerLink="/artwork" routerLinkActive="active">Artwork Page</a></li>
+                <li><a routerLink="/about" routerLinkActive="active">About Page</a></li>
+       </ul>
+    </nav>
+  
+  </div>
+  
+  <!-- Flashing text-->
+  <div class= "news">
+
+    <h2 class= "flash">Featured Game!</h2>
+
+
+  </div>
+
+  
+  <!-- Ads n stuff-->
+  <div class= "clearfix">
+
+    <div class= "Ads" >  <img style = "width:100%;height:600px"  id="Ad1" alt="SomeAd" src="../assets/Manga_Ad.png"></div>
+    <div class= "Ads" > 
+        <a routerLink="/game" routerLinkActive="active">
+        <img style = "width:100%;height:300px"  id="GameArt" alt="SomeAd" src="../assets/BQ_art.png">
+        </a>
+      </div>
+    <div class= "Ads" >  <img style = "width:100%;height:600px"  id="Ad2" alt="SomeAd" src="../assets/Manga_Ad.png"></div>    
+   
+  </div>  
+  
+  <!-- Footer ad-->
+  <div class= "footer"> 
+    <a href="https://www.youtube.com/channel/UCVgqzpPQrrQF43XQsaAmS4A">
+      <img style = "width:1000px;height:150px" id="SWS" alt="SWSad" src="../assets/New_SWS banner.jpg">
+    </a>
+
+  </div>
+
+  
+
+
+  <router-outlet></router-outlet>
+</main>
+
+
+
+
